@@ -52,3 +52,33 @@ class car extends vehicle {
     }
 }
 
+// Problem-5
+function processValue(value: string | number): number{
+    if(typeof value === "string"){
+     return value.length;
+    }
+    else {
+        return value * 2;
+    }
+}
+
+// Problem-6
+
+interface Product {
+    name: string;
+    price: number;
+  }
+  
+  function getMostExpensiveProduct(products: Product[]): Product | null {
+    if(products.length ===0){
+        return null;
+    }
+    let getHighest = products[0];
+    for(let i=1;i<products.length;i++){
+        if(products[i].price > getHighest.price){
+            getHighest = products[i];
+        }
+    }
+    return getHighest;
+  }
+ 
