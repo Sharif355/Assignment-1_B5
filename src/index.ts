@@ -14,3 +14,14 @@ function formatString (input:string,toUpper?:boolean):string {
     }
 }
 
+// Problem-2
+function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
+   return items.filter(item => item.rating >= 4)
+}
+
+// Problem-3
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+    return ([] as T[]).concat(...arrays)
+}
+
+
