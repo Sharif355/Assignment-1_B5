@@ -1,4 +1,3 @@
-// Problem-1
 
 function formatString (input:string,toUpper?:boolean):string {
     if(toUpper===true){
@@ -14,17 +13,17 @@ function formatString (input:string,toUpper?:boolean):string {
     }
 }
 
-// Problem-2
+
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
    return items.filter(item => item.rating >= 4)
 }
 
-// Problem-3
+
 function concatenateArrays<T>(...arrays: T[][]): T[] {
     return ([] as T[]).concat(...arrays)
 }
 
-// Problem-4
+
 class vehicle {
     private make:string;
     private year:number;
@@ -52,7 +51,7 @@ class car extends vehicle {
     }
 }
 
-// Problem-5
+
 function processValue(value: string | number): number{
     if(typeof value === "string"){
      return value.length;
@@ -62,7 +61,7 @@ function processValue(value: string | number): number{
     }
 }
 
-// Problem-6
+
 
 interface Product {
     name: string;
@@ -80,5 +79,38 @@ interface Product {
         }
     }
     return getHighest;
+  }
+ 
+
+enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+  }
+  
+  function getDayType(day: Day): string {
+    if(day=== Day.Friday)
+        return "WeekEnd";
+    else {
+        return "WeekDay";
+    }
+  }
+  
+ 
+  async function squareAsync(n: number): Promise<number>{
+    if(n < 0){
+        throw new Error("Negative number not allowed!");
+    }
+
+    return new Promise ((resolve)=>{
+        setTimeout(()=>{
+            resolve(n * n)
+        },1000);
+    });
+
   }
  
