@@ -69,3 +69,5 @@ function getVehcile<T, C extends keyof T>(obj: T, key: C): T[C]{
 - 🔹It is frequently combined with generics to create reusable and adaptable utilities.
 
 - 🔹Identifies important discrepancies at compile time, preventing runtime mistakes.
+
+🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁🏁
