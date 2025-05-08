@@ -93,14 +93,14 @@ enum Day {
   }
   
   function getDayType(day: Day): string {
-    if(day=== Day.Friday)
+    if(day=== Day.Saturday || day === Day.Sunday)
         return "WeekEnd";
     else {
         return "WeekDay";
     }
   }
-  
- 
+
+
   async function squareAsync(n: number): Promise<number>{
     if(n < 0){
         throw new Error("Negative number not allowed!");
