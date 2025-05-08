@@ -19,7 +19,7 @@ Whether you're a beginner or an experienced developer, you'll find useful insigh
 ## 📌 Table of Contents
 
 1. [Introduction](#introduction)
-2. [Use of Keyof](#UseofKeyof)
+2. [Use of Keyof](#use-of-keyof)
 3. [Code Examples](#code-examples)
 4. [Key Takeaways](#key-takeaways)
 
@@ -60,7 +60,7 @@ function getVehcile<T, C extends keyof T>(obj: T, key: C): T[C]{
   return obj[key]
 }
 ``` 
-📌 Key Takeaways
+## 📌 Key Takeaways
 
 - 🔹Keyof generates a union type of an object type's property keys.
 
@@ -94,7 +94,7 @@ Whether you're a beginner or an experienced developer, you'll find useful insigh
 ## 📌 Table of Contents
 
 1. [Introduction](#introduction)
-2. [Use of Enmus](#UseofEnums)
+2. [Use of Enmus](#use-of-enums)
 3. [Code Examples of Enums](#code-examples)
 4. [Key Takeaways](#key-takeaways)
 
@@ -106,7 +106,7 @@ _Enums stands for abbriviation of Enumerations.In typescripts, Enmus helps us to
 
 ---
 
-## 💡 Use of keyof
+## 💡 Use of Enums
 
 _It's biggest usefullness is,it's allow us to represent a group of related values under a single name. It can be either string or Numeric_
 
